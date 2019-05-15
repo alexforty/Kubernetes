@@ -1,0 +1,12 @@
+apiVersion:
+kind:
+metadata:
+ mame:
+ labels:
+    name:
+    app:
+    type:
+spec:
+  containers:
+    - name:
+      image:
