@@ -1,0 +1,19 @@
+apiVersion: 
+# default apiVersion is v1 
+kind: 
+# Service should be added here obvs :)
+metadata:
+
+spec:
+  type:
+  # options: nodePort clusterIP loadbalancer or externalname. defaults to clusterIp if left blank
+  ports:
+  - port: 
+    # external port on the kubernetes service. this must be the first item in this section :)
+    targetPort: 
+    # will default to the same as the port if left blank
+    nodePort: 
+    # will select random port between 30000 and 32767 unless specified
+  selector:
+    #add pod labels here to assign service to pod(s)
+    
