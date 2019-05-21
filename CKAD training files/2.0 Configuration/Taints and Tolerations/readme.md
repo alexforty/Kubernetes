@@ -1,4 +1,4 @@
-# H1 <b>Taints and Tolerations</b>
+# Taints and Tolerations
 
 Taints and tolerations are used to restrict where the Kubernetes scheduler can place pods in a cluster.
 
@@ -7,23 +7,23 @@ Taints and tolerations are used to restrict where the Kubernetes scheduler can p
 
 <b> by default the master node in a cluster has a taint on it that blocks the scheduler deploying pods to the master (this can be over written - but is not recommended) </b>
 
-### H3 commands:
+## commands:
 
-#### H4 Taints
+### Taints
 
-syntax:
+- syntax:
     kubectl taint nodes node-name key=value: tainteffect
 
-example:
+- example:
     kubectl taint nodes node1 app=tomato:NoSchedule
 
-options:
+- options:
 
-- NoSchedule: pods without toleration will not be deployed on the node with the taint
-- PreferNoSchedule: it is preferred that pods without toleration are not deployed, but it is not guaranteed (e.g. in cases of high utilisation)
-- NoExecute: prevents new pods being deployed on the node and if existing pods are not tolerated they will be moved to a different node. 
+  - NoSchedule: pods without toleration will not be deployed on the node with the taint
+  - PreferNoSchedule: it is preferred that pods without toleration are not deployed, but it is not guaranteed (e.g. in cases of high utilisation)
+  - NoExecute: prevents new pods being deployed on the node and if existing pods are not tolerated they will be moved to a different node. 
 
-### H3 Tolerations:
+### Tolerations:
 
 *tolerations are added to pods.*
 
