@@ -48,3 +48,21 @@ spec:
 **Taints and tolerations are only meant to restrict nodes from accepting pods. it does not stop a pods with a toleration being added to another node in the cluster.**
 
 *in order to force a pod onto a specific node that is node affinity.*
+
+**to remove a taint**
+
+type the following command:
+
+syntax:
+```
+kubectl taint nodes nodename key=value: tainteffect-
+```
+
+notice the - suffix appended to the taint command
+
+example:
+*to remove the NoSchedule taint from the master node:
+```
+kubectl taint nodes master node-role.kubernetes.io/master:NoSchedule-
+```
+
