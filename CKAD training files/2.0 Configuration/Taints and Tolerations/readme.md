@@ -1,11 +1,11 @@
-Taints and Tolerations
+<u>Taints and Tolerations</u>
 
 Taints and tolerations are used to restrict where the Kubernetes scheduler can place pods in a cluster.
 
 - taints are applied to nodes only
 - tolerations are added to pods only
 
- > by default the master node in a cluster has a taint on it that blocks the scheduler deploying pods to the master (this can be over written)
+<b> by default the master node in a cluster has a taint on it that blocks the scheduler deploying pods to the master (this can be over written - but is not recommended) </b>
 
 commands:
 
