@@ -1,4 +1,4 @@
-<u>Taints and Tolerations</u>
+<ul>Taints and Tolerations</ul>
 
 Taints and tolerations are used to restrict where the Kubernetes scheduler can place pods in a cluster.
 
