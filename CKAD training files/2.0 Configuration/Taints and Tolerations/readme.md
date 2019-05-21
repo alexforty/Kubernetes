@@ -40,7 +40,7 @@ spec:
           image nginx
     tolerations:
         - key: "app"
-          operator: "eaqual"
+          operator: "equal"
           value: "tomato"
           effect: "NoSchedule"
 ```
