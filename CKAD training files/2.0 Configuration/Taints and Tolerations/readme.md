@@ -12,10 +12,10 @@ Taints and tolerations are used to restrict where the Kubernetes scheduler can p
 ### Taints
 
 - syntax:
-    kubectl taint nodes node-name key=value: tainteffect
+    ```kubectl taint nodes node-name key=value: tainteffect```
 
 - example:
-    kubectl taint nodes node1 app=tomato:NoSchedule
+    ```kubectl taint nodes node1 app=tomato:NoSchedule```
 
 - options:
 
