@@ -29,6 +29,7 @@ Taints and tolerations are used to restrict where the Kubernetes scheduler can p
 
 add a section in the yaml playbook called tolerations (same level as containers element of the yaml file). for example, using the taint above as an example, to add a toleration to the pod, it would look like this:
 
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -42,6 +43,7 @@ spec:
           operator: "eaqual"
           value: "tomato"
           effect: "NoSchedule"
+```
 
 **Taints and tolerations are only meant to restrict nodes from accepting pods. it does not stop a pods with a toleration being added to another node in the cluster.**
 
