@@ -96,5 +96,6 @@ there are currently 2 types of node affinity types available:
 
 |        | DuringScheduling | DuringExecution | Notes  |
 |--------|:----------------:|:---------------:|--------|
-| Type 1 | Required         | Ignored         |
-| Type 2 | Preferred        | Ignored         |
+| Type 1 | Required         | Ignored         | Required means that the scheduler will find a node with the affinity rules to place the pod. if it can't find one, the pod will not be scheduled
+| Type 2 | Preferred        | Ignored         | Preferred means try to apply the node affintiy rules, but if you can't put the pod anywhere
+| _Type 3_| 
