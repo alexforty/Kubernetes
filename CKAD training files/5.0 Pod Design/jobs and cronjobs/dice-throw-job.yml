@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: job
+metadata:
+  name: dice-throw
+spec:
+  template:
+    spec:
+      containers:
+      - name: throw-dice
+        image: kodekloud/throw-dice
+      restartPolicy: Never

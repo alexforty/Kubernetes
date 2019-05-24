@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: throw-dice-pod
+spec:
+  containers:
+  - name: throw-dice
+    image: kodekloud/throw-dice
+  restartPolicy: Never
+  
+
+
+
+
+
+
+
