@@ -30,10 +30,6 @@ however the service should be accessible across the cluster from any node.
 
 _So how is that achieved?_
 
-Kube-proxy is a process that runs on each node in the kubernetes cluster. Its job is to look for new services and every time a new service is created it creates the appropriate rules on each node to forward traffic to those services to the backend pods. e.g. using IPTABLES rules.
+Kube-proxy is a process that runs on each node in the kubernetes cluster. Kube-proxy's job is to look for new services and every time a new service is created create the appropriate rules on each node to forward traffic to those services to the backend pods. e.g. using IPTABLES rules.
 
-In example it creates an IP table rule on each node in the cluster to forward traffic heading to the IP of the service  to the IP of the actual pod. So how kube-proxy configure the service
-
-We discuss a lot more about networking and services kube-proxy and POD networking.
-
-Later in this course again we have a large section just for networking.
+In example kube-proxy creates an IP table rule on each node in the cluster to forward traffic heading to the IP of the service  to the IP of the actual pod.
